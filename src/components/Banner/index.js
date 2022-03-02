@@ -3,23 +3,24 @@ import styled from "styled-components";
 export const StyledBanner = styled.header`
 	width: 100%;
 	min-width: 350px;
-	min-height: 448px;
+	min-height: 80vh;
 	background-size: cover;
-	background-position: center;
-	object-fit: contain;
+	background-position: center top;
+	object-fit: cover;
 	position: relative;
 
 	.banner__container {
-		height: 190px;
+		max-width: 600px;
 		margin-left: 3.5%;
-		padding-top: 140px;
+		padding-top: 30vh;
 	}
 
 	.banner__title {
-		font-size: 3rem;
+		font-size: 4rem;
 		font-weight: 800;
 		padding-bottom: 0.3rem;
-		color: #fff;
+		color: ${({ theme }) => theme.colors.white};
+		text-shadow: 1px 1px 3px rgba(51, 51, 51, 0.8);
 	}
 
 	.banner__button {
@@ -27,12 +28,13 @@ export const StyledBanner = styled.header`
 		color: #fff;
 		outline: none;
 		border: none;
+		font-size: 1.4rem;
 		font-weight: 700;
 		border-radius: 0.2vw;
 		padding-inline: 2rem;
 		margin-right: 1rem;
 		padding-block: 0.5rem;
-		background-color: rgba(51, 51, 51, 0.5);
+		background-color: rgba(51, 51, 51, 0.8);
 
 		&:hover {
 			color: #000;
@@ -42,13 +44,11 @@ export const StyledBanner = styled.header`
 	}
 
 	.banner__description {
-		width: 20rem;
-		max-width: 360px;
-		height: 80px;
-		color: #fff;
+		color: ${({ theme }) => theme.colors.white};
 		line-height: 1.3;
 		padding-top: 1rem;
-		font-size: 0.8rem;
+		font-size: 1.6rem;
+		text-shadow: 1px 1px 3px rgba(51, 51, 51, 0.8);
 	}
 
 	.banner--fadeBottom {

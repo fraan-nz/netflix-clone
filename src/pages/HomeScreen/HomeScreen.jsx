@@ -8,7 +8,7 @@ import { requests } from "../../services/request";
 function HomeScreen() {
 	return (
 		<StyledHomeScreen>
-			<NavBar />
+			<NavBar isLogged />
 			<Banner />
 			<Row
 				title="Netflix Originals"

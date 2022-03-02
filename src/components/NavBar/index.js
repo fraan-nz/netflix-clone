@@ -33,4 +33,15 @@ export const StyledNavBar = styled.nav`
 		border-radius: 5px;
 		cursor: pointer;
 	}
+
+	.nav__button {
+		color: ${({ theme }) => theme.colors.white};
+		font-size: 1rem;
+		padding: 7px 17px;
+		background-color: ${({ theme }) => theme.colors.red};
+		font-weight: 400;
+		border: none;
+		border-radius: 2px;
+		cursor: pointer;
+	}
 `;
