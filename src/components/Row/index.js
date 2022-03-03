@@ -24,6 +24,7 @@ export const StyledRow = styled.div`
 		&:hover {
 			transform: scale(1.08);
 			opacity: 1;
+			cursor: pointer;
 		}
 	}
 	.row__imageLarge {
